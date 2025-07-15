@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\begin{document}
+\begin{tikzpicture}
+    \node[circle, draw, inner sep=2pt] (label) {1};
+\end{tikzpicture}
+This is the first topic.
+
+\begin{tikzpicture}[baseline=(label.base)]
+    \node[circle, draw, inner sep=2pt] (label) {1};
+\end{tikzpicture}
+This is the first topic.
+
+\end{document}

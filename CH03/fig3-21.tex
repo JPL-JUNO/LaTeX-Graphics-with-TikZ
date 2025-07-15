@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\DeclareRobustCommand{\circled}[1]{%
+    \tikz[baseline=(label.base)]{
+        \node[circle, white, shading=ball, inner sep=2pt] (label) {#1};
+    }
+}
+\usepackage{enumitem}
+\begin{document}
+\circled{1} This is the first topic.
+\begin{enumerate}[label=\circled{\arabic*}]
+    \item First item
+    \item Second item
+    \item Third item
+    \item Fourth item
+\end{enumerate}
+\end{document}

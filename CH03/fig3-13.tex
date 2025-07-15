@@ -1,0 +1,19 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usetikzlibrary{shapes}
+\usetikzlibrary{positioning}
+\begin{document}
+\begin{tikzpicture}
+    \draw[thin, dotted] (-5, -5) grid[step=1] (5, 5);
+    \draw[->] (-5, 0)--(5, 0);
+    \draw[->] (0, -5)--(0, 5);
+    \draw circle [fill, radius=2pt] node [anchor=south]{text};
+    \draw (1,0) circle [fill, radius=2pt] node [above] {text};
+
+    \node [draw] at (2, 0) (TikZ){TikZ};
+    \node [draw, right = 0.1cm of TikZ] {PDF};
+    \node [draw, above right = 2cm and 1cm of TikZ] {PDF};
+    \node [draw, above right = -2cm and 1cm of TikZ] {PDF};
+    \draw[blue, ->] (TikZ.north east) -- ++ (0, 2)-- ++ (1, 0);
+
+\end{tikzpicture}
+\end{document}

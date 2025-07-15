@@ -1,0 +1,17 @@
+\documentclass[tikz, border=10pt]{standalone}
+\begin{document}
+\begin{tikzpicture}
+% \draw[thin, dotted] (-3, -3) grid[step=0.5] (3, 3);
+% \draw[->] (-3, 0)--(3, 0);
+% \draw[->] (0, -3)--(0, 3);
+\draw[shading=ball, ball color=yellow] (0,0) circle (2);
+\draw[shading=ball, ball color=black] (-0.5, 0.5) ellipse [x radius=.2, y radius=0.4];
+\draw[shading=ball, ball color=black] (0.5, 0.5) ellipse [x radius=.2, y radius=0.4];
+\draw[very thick] (-1, -1) arc [start angle=185, end angle=355, x radius=1,y radius=0.5];
+% 应该是在 (0,0) 绘制椭圆，然后选择弧度再将起点移到绘图点位
+% \draw[dotted] ellipse(1 and 0.5);
+% \draw[green] (0,2) arc(90:180:2);
+\draw (-3, -3) rectangle (3, 3);
+\end{tikzpicture}
+
+\end{document}

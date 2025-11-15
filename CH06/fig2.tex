@@ -1,0 +1,7 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usetikzlibrary{trees, graphs, matrix, quotes}
+\begin{document}
+\begin{tikzpicture}
+    \node {A} child {node {1} edge from parent [dashed, ->] node[above, sloped, font=\tiny] {down}};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,24 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usetikzlibrary{positioning}
+\begin{document}
+\begin{tikzpicture}[every label/.style = {scale=.5}]
+    \node[
+        label = above:Graphics,
+        label = left:Design,
+        label = below:Typography,
+        label = right:Coding,
+        circle, shading=ball, ball color=blue!60, white
+    ]
+    {TikZ};
+\end{tikzpicture}
+\begin{tikzpicture}[every pin/.style = {scale=.5}]
+    \node[
+        pin = above:Graphics,
+        pin = left:Design,
+        pin = below:Typography,
+        pin = right:Coding,
+        circle, shading=ball, ball color=blue!60, white
+    ]
+    {TikZ};
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,11 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta}
+\begin{document}
+\begin{tikzpicture}
+    \node (tex) [fill=orange] {TEX};
+    \node (pdf) [fill={rgb:red,244;green,15;blue,2}, right=of tex] {PDF};
+    \draw[->] (tex) to (pdf);
+    \draw[->] (tex) to[out=45, in=225, looseness=1.5] (pdf);
+\end{tikzpicture}
+\end{document}

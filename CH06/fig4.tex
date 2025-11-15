@@ -1,0 +1,16 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usetikzlibrary{trees, graphs, matrix, quotes}
+\begin{document}
+\begin{tikzpicture}[thick] % for the whole tree
+    \node[draw, black, rectangle] {A} 
+    [red, ->]
+    child {node {1}}
+    child {node {2}}
+    % child path
+    child[densely dashed] {node[draw, blue, circle] {3}} % child node
+    % 样式继承，尤其是 3 的外圈继承了 densely dashed
+    child {node {4}}
+    child {node {5}}
+    ;
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,9 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usetikzlibrary{trees, graphs, matrix, quotes}
+\begin{document}
+\begin{tikzpicture}
+    \node {A} child {node {1} edge from parent};
+    % \node {A} child {node {1}};
+    % 隐式创建 edge from parent
+\end{tikzpicture}
+\end{document}

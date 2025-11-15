@@ -1,0 +1,18 @@
+\documentclass[tikz, border=10pt]{standalone}
+\usetikzlibrary{positioning, scopes}
+\usepackage{tikzlings}
+\tikzset{mygrid/.pic = {
+    \draw[thin, dotted] (-3, -3) grid (3,3);
+    \draw[->](-3, 0)--(3, 0);
+    \draw[->](0, -3)--(0, 3);
+}}
+\begin{document}
+\begin{tikzpicture}
+    \draw pic {mygrid}
+    (-1, 0) pic {chicken}
+    (1, 0) pic {pig}
+    (-2, -2) pic {bear}
+    (0, -2) pic {penguin}
+    (2, -2) pic {owl};
+\end{tikzpicture}
+\end{document}

@@ -31,3 +31,27 @@ This leads us to the following approach:
 [Figure 7.5 – Reversing a part of the path](../07FillingClippingShading/05-filling-reversed.pdf)
 
 `nonzero rule` can be chosen as an option, such as `\fill[orange, nonzero rule]`, but it’s the default rule, so you don’t need to choose it explicitly.
+
+### The even odd rule
+
+To decide whether a point is inside or outside the path-bordered area, we will consider a ray from that point toward infinity.
+
+This time, the method’s surprisingly simple:
+
+- We count how often the ray crosses the path
+- If the total number is even, the point is outside
+- If the number is odd, the point is inside
+
+[Figure 7.8 – Nonzero rule on the left and even odd rule on the right](../07FillingClippingShading/08-nonzero-vs-even-odd.pdf)
+
+## Clipping a drawing
+
+Clipping means cutting pieces from a drawing or a path. In other words, it means restricting a picture to a specific area, called the **clipping area** or **clipping path**.
+
+The clipping area is the **interior** of the clipping path.
+
+[Figure 7.15 – A clipped segment of the rings](../07FillingClippingShading/15-clipped-segment.pdf)
+
+## Reverse clipping
+
+[Figure 7.19 – Colored segments of a ring](../07FillingClippingShading/19-colored-segments.pdf)

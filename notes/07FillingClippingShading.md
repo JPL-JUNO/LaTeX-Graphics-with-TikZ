@@ -55,3 +55,20 @@ The clipping area is the **interior** of the clipping path.
 ## Reverse clipping
 
 [Figure 7.19 – Colored segments of a ring](../07FillingClippingShading/19-colored-segments.pdf)
+
+## Shading an area
+
+Similar to `fill`, `shade` can be used as a command and an option:
+
+• `\shade` is equivalent to `\path[shade]`; use it for shading without drawing a border
+• `\shadedraw` is the same as `\path[draw, shade]` and `\draw[shade]`; it produces the shading and adds a border
+
+We will look at several shading styles. The first three, `axis`, `radial`, and `ball`, are included with TikZ by default. To use the other shadings, load the corresponding library in your preamble with `\usetikzlibrary{shadings}`.
+
+### Axis shading
+
+Axis shading is linear shading between top and bottom, left and right, or at a chosen angle.
+
+We can optionally specify a middle color. Because the color in the middle is automatically interpolated and we want to override it, we would have to set it after the other colors.(中值要设置在另外两个值后面)
+
+### Radial shading

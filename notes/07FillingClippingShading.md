@@ -72,3 +72,5 @@ Axis shading is linear shading between top and bottom, left and right, or at a c
 We can optionally specify a middle color. Because the color in the middle is automatically interpolated and we want to override it, we would have to set it after the other colors.(中值要设置在另外两个值后面)
 
 ### Radial shading
+
+`shading=radial` is implicitly set, as TikZ recognizes inner and outer colors. 因为 Axis shading 使用的是 top, bottom, left, right 关键词。

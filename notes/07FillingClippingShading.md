@@ -74,3 +74,7 @@ We can optionally specify a middle color. Because the color in the middle is aut
 ### Radial shading
 
 `shading=radial` is implicitly set, as TikZ recognizes inner and outer colors. 因为 Axis shading 使用的是 top, bottom, left, right 关键词。
+
+### Ball shading
+
+When you set ball color, TikZ applies shading=ball and transitions between the dark and the light color in a highlight spot, just as if some light was shining on a ball.
